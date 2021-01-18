@@ -19,10 +19,8 @@ p {
     font-size: 1.4em;
 }
 .icon {
-    height: 1.9em;
-}
-.bold600 {
-    font-weight: 600;
+    height: 1em;
+    width: 1em;
 }
 
 /* HEADER */
@@ -71,40 +69,39 @@ p {
 .search {
     height: 240px;
     padding: 10px 0;
-    /* background-color: lightsteelblue; */
-
 }
 .search__subtitle {
     padding: 10px 0;
 }
+
+/* SEARCH SECTION: BARRE DE RECHERCHE */
+
 .search__bar {
     height: 50px;
     max-width: 345px;
     background-color: #f2f2f2;
     margin: 10px 0;
     border-radius: 15px;
-    display: inline-block;
+    display: flex;
     align-items: center;
-    /* justify-content: space-around; */
-    /* flex-wrap: nowrap; */
+    flex-wrap: nowrap;
 }
-.search__icon {
-    height: 15px;
-    margin: 0 15px 0 18px;
-
+.search__position {
+    padding: 0 15px;
 }
 .search__city {
     border: none;
     height: 48px;
-    width: 180px;
+    width: 225px;
 }
 .search__city::placeholder {
     color: #111;
     font-weight: 600;
-    padding: 15px 10px;
+    padding: 15px 40px 15px 20px;
 }
-.search__submit__btn {
+.search__btn {
     color: #fff;
+    padding: 0 5px;
     background-color: #0065fc;
     border: none;
     border-top-right-radius: 15px;
@@ -113,59 +110,133 @@ p {
     width: 115px;
 }
 
-/* LES FILTRES */
+/* SEARCH SECTION: LES FILTRES */
+
 
 .search__filter {
     display: flex;
     align-items: center;
-    padding: 30px 10px;
-    padding-left: 10px;
     flex-wrap: wrap;
-    position: relative;
-    /* justify-content: space-around; */
+    padding: 20px 10px;
+    padding-left: 10px;
 }
-.search__filter__card {
-    display: flex;
-    justify-content: flex-start;
+.search__filter__title {
+    font-weight: 600;
+    padding-right: 10px;
+}
+.search__filter__option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
     border-style: solid;
     border-color: #f2f2f2;
     border-radius: 20px;
-    padding: 10px 15px 10px 40px;
-    padding-left: 40px;
+    border-width: 1.8px;
+    padding-right: 10px;
+    margin: 10px;
+    height: 31px;
 }
-.search__filter__circle {
+.search__filter__icon {
     background-color: #DEEBFF;
-    background-image: url(images/Icones/money-bill-wave-solid.svg);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* padding: 10px 15px; */
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: inherit;
-    left: 37px;
-   
-
-
-
-
-    /* margin: auto; */
-}
-/* .search__filter__icon {
-    background-color: #DEEBFF;
-    color: #0065fc;
-    position: relative;
     width: 15px;
     height: 15px;
-    margin: auto; 
-}*/
-.search__filter__p {
-    text-transform: capitalize;
+    border-radius: 50%;
+    padding: 9.5px;
+    margin: 3px 0 0 -6px;
+}
+.search__filter__text {
+    padding: 0 10px;
     font-weight: 600;
+    padding-left: 10px;
+}
+
+/* SEARCH SECTION: LOGEMENTS DISPONIBLES */
+
+.search__info {
+    display: flex;
+    align-items: center;
+}
+.search__info__text {
+    padding-left: 10px;
+    
+}
+.search__icon__info {
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-color: #f2f2f2;
+    border-radius: 50%;
+    border-width: 1px;
+    padding: 6.5px;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* test */
+
+#searchbox {
+    background: url(http://4.bp.blogspot.com/-u0fEq-zSTYI/VD1gGDLy3aI/AAAAAAAAAhw/im3bcQd5wBM/s1600/search-box.png) no-repeat;
+    height: 27px;
+    width: 202px;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+#searchbox input {
+    outline: none;
+}
+
+#searchbox input[type= »text »] {
+    background: transparent;
+    margin: 0px 0px 0px 12px;
+    padding: 5px 0px 5px 0px;
+    border-width: 0px;
+    font-family: « Arial Narrow », Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    width: 77%;
+    color: #828282;
+    display: inline-table;
+    vertical-align: top;
+}
+
+#button-submit {
+    background: url(http://2.bp.blogspot.com/-4OxjMRukhCM/VD1gBscpzII/AAAAAAAAAhk/TUxMSv7bCzA/s1600/search-button.png) no-repeat;
+    border-width: 0px;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+}
+
+#button-submit:hover {
+    background: url(http://4.bp.blogspot.com/-GgNBTS_3FEA/VD1gBgm7RFI/AAAAAAAAAhg/flg6VijzW8E/s1600/search-button-hover.png) no-repeat;
+}
+
+#button-submit::-moz-focus-inner {
+    border: 0;
+}
 
 
