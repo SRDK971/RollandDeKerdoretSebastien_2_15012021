@@ -4,36 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Reservia</title>
 </head>
 <body>
 
-    <header class="header">
-        <div class="menu">
+    <header class="menu">
             <div class="menu__clogo"><img src="images/logo/Reservia@3x.png" alt="Logo Reservia" class="menu__logo"></div>
-            <nav class="menu__bar">
+            <nav class="menu__nav">
                 <ul class="menu__list">
                     <li><a href="#hebergements" class="menu__item menu__item--active">Hébergements</a></li>
                     <li><a href="#activites" class="menu__item">Activités</a></li>
                 </ul>
             </nav>
             <div class="menu__csub"><a href="#subscription" class="menu__sub">S'inscrire</a></div>
-        </div>
     </header>
 
     <section class="search">
-        <h1 class="search__title">Trouver votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <div>
-            <label>
-                <input>
-
+        <h1 class="search__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="search__subtitle">En plein centre ville ou en pleine nature</p>
+        <div class="search__bar">
+            <label class="search__item">
+                <img src="images/Icones/map-marker-alt-solid.svg" alt="map" class="icon search__icon">
+                <input type="search" name="city" id="city" class="search__city" placeholder="Marseille, France">
+                <button type="submit" id="submit" class="search__submit__btn">Rechercher</button>
             </label>
 
         </div>
-        
+        <div class="search__filter">
+            <p class="bold600">Filtres</p>
+            <div class="search__filter__circle"></div>
+            <div class="search__filter__card">
+                <p class="search__filter__p">économique</p>
+            </div>
+            <div class="search__filter__circle"></div>
+            <div class="search__filter__card">
+                <p class="search__filter__p">familial</p>
+            </div>
+            <div class="search__filter__circle"></div>
+            <div class="search__filter__card">
+                <p class="search__filter__p">romantique</p>
+            </div>
+            <div class="search__filter__circle"></div>
+            <div class="search__filter__card">
+                <p class="search__filter__p">animaux autorisés</p>
+            </div>
+        </div>
+        <div class="search__info">
+            <img src="" alt="">
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+
 
 
 
