@@ -199,7 +199,7 @@ p {
     border-radius: 20px;
 }
 .heberge__title {
-    padding: 40px 15px 30px 15px;
+    padding: 40px 15px 30px 25px;
 }
 .heberge__container {
     height: 428px;
@@ -209,7 +209,6 @@ p {
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
-
 }
 .heberge__card {
     height: 200px;
@@ -221,6 +220,7 @@ p {
     height: 114px;
     width: 246px;
     padding: 5px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -236,8 +236,7 @@ p {
 }
 .heberge__plus {
     font-weight: 600;
-    padding: 30px 15px 40px 15px;
- 
+    padding: 30px 15px 40px 25px;
 }
 
 /* RESULT SECTION: POPULAIRES */
@@ -254,7 +253,7 @@ p {
     border-radius: 20px;
 }
 .pop__titleicon {
-    width: 80%;
+    width: 87%;
     display: flex;
     justify-content: space-between;
     padding: 40px 30px 20px 30px;
@@ -271,12 +270,13 @@ p {
 .pop__pic {
     height: 135px;
     width: 40%;
+    object-fit: cover;
     padding: 5px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 .pop__card__text {
-    
+
 }
 
 /* ACTIVITY SECTION */
