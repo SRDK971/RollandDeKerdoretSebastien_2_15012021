@@ -9,7 +9,7 @@
 * {
     padding: 0;
     margin: 0;
-    max-width: 1340px;
+    max-width: 1940px;
     font-family: 'Raleway', sans-serif;
     font-size: 10px;
 }
@@ -118,7 +118,7 @@ p,
     .menu__nav {
         order: 0;
         margin-left: auto;
-        max-width: 25em;
+        max-width: 35em;
     }
 
     .menu__item {
@@ -153,57 +153,119 @@ p,
 
 .search {
     height: 295px;
-    padding: 10px 0 0 0;
+    margin: 2em 3% 0 3%;
 }
 .search__subtitle {
-    padding: 10px 0;
+    padding: 1.5em 0;
 }
 
-/* SEARCH SECTION: BARRE DE RECHERCHE */
+/* SEARCH SECTION: SEARCH BAR */
 
 .search__bar {
     height: 50px;
-    max-width: 345px;
-    background-color: #f2f2f2;
-    margin: 10px 0;
-    border-radius: 15px;
-    display: flex;
+    min-width: 335px;
+    max-width: 350px;
+    padding-top: 2em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: inline-flex;
+    justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap;
 }
-.search__position {
-    padding: 0 15px;
+.form__icon {
+    height: 50px;
+    width: 40px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
-.search__city {
-    border: none;
-    height: 48px;
-    width: 225px;
+.icon {
+    height: 15px;
 }
-.search__city::placeholder {
+
+.search__form {
+    height: 50px;
+    width: auto;
+    min-width: 200px;
+    background-color: #fff;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.search__area {
+    height: 50px;
+    width: 239px;
+    background-color: #fff;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-right: none;
+}
+.search__area::placeholder {
+    height: 50px;
+    width: 239px;
     color: #111;
-    font-weight: 800;
-    font-size: 1.4em;
+    background-color: #fff;
+    font-weight: 600;
     opacity: 1;
-    padding: 15px 40px 15px 20px;
+
 }
-input[type="search"]::-moz-placeholder {
-    padding: 15px 40px 15px 20px;
-    text-indent: 20px;
-}
+
 .search__btn {
+    display: none;
     color: #fff;
-    padding: 0 5px;
     background-color: #0065fc;
     border: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     height: 50px;
-    width: 115px;
-    font-weight: 800;
-    font-size: 1.4em;
+    width: 100px;
+    font-weight: 600;
+    cursor: pointer;
+    
 }
 
-/* SEARCH SECTION: LES FILTRES */
+.form__icon2 {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065fc;
+    border-radius: 1em;
+    cursor: pointer;
+    margin: 0 0 0 -10px;
+    background-image: url(images/Icones/search-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center;
+}
+
+.icon3 {
+    height: 1.5em;
+    width: 1.5em;
+    display: flex;
+    align-items: center;
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .form__icon2 {
+        display: none;
+    }
+    .search__btn {
+        display: inline-block;
+    }
+}
+
+/* SEARCH SECTION: FILTERS */
 
 
 .search__filter {
@@ -243,7 +305,7 @@ input[type="search"]::-moz-placeholder {
     padding-left: 10px;
 }
 
-/* SEARCH SECTION: LOGEMENTS DISPONIBLES */
+/* SEARCH SECTION: AVAILABILITY NUMBER */
 
 .search__info {
     display: flex;
@@ -254,8 +316,8 @@ input[type="search"]::-moz-placeholder {
 
 }
 .search__icon__info {
-    width: 10px;
-    height: 10px;
+    width: 1.5em;
+    height: 1.5em;
     border-style: solid;
     border-color: #f2f2f2;
     border-radius: 50%;
@@ -264,17 +326,19 @@ input[type="search"]::-moz-placeholder {
 }
 
 
-/* RESULT SECTION */
+/* RESULT SECTION : HEBERGEMENT ET POPULAIRE */
 
 .heberge {
     height: 625px;
     width: auto;
+    margin: 0 3%;
     display: flex;
     justify-content: space-between;
 }
 @media (max-width: 1294px) {
     .heberge {
         height: 70em;
+        
     }
 }
 @media (max-width: 991px) {
@@ -283,6 +347,11 @@ input[type="search"]::-moz-placeholder {
        display: flex;
        flex-flow: column-reverse wrap;
    }
+}
+@media (max-width: 768px) {
+    .heberge {
+        margin: 3em 0 0 0;
+    }
 }
 /* RESULT SECTION: HEBERGEMENTS */
 
@@ -367,6 +436,7 @@ input[type="search"]::-moz-placeholder {
         height: 141em;
         display: flex;
         width: auto;
+        background-color: #fff;
     }
     .heberge__container {
         width: auto;
@@ -402,7 +472,7 @@ input[type="search"]::-moz-placeholder {
 }
 .pop__container {
     height: 85%;
-    padding-top: 2em;
+    margin-top: 2em;
     margin: 0 auto auto auto;
     display: flex;
     flex-direction: column;
@@ -463,6 +533,7 @@ input[type="search"]::-moz-placeholder {
         display: flex;
         justify-content: space-between;
         align-content: space-between;
+        border-radius: 0;
     }
     .pop__card {
         height: 14em;
@@ -470,12 +541,15 @@ input[type="search"]::-moz-placeholder {
         justify-content: space-around;
         align-content: space-around;
     }
+    .pop__titleicon {
+        padding-top: 2em;
+    }
 }
 /* ACTIVITY SECTION */
 
 .activites {
-    height: 615px;
-    margin-top: 20px;
+    height: 61.5em;
+    margin: 2em 3%;
     background-color: #0065fc;
     display: flex;
     flex-flow: column;
@@ -550,6 +624,12 @@ input[type="search"]::-moz-placeholder {
     object-fit: cover;
     max-height: 390px;
 }
+@media (max-width: 768px) {
+    .activites {
+        margin-left: 0;
+    }
+    
+}
 
 /* FOOTER */
 
@@ -562,6 +642,7 @@ input[type="search"]::-moz-placeholder {
     /* justify-content: center;  */
 }
 .footer__container {
+    width: 100%;
     padding: 0 5%;
     display: flex;
     flex-grow: 1;
@@ -580,3 +661,11 @@ input[type="search"]::-moz-placeholder {
 .footer__link {
     padding-bottom: 0.8em;
 }
+@media (max-width: 768px) {
+    .footer {
+        height: auto;
+        padding-bottom: 2em;
+}
+    .footer__container {
+        flex-wrap: wrap;
+    }

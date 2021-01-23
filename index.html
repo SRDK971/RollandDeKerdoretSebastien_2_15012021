@@ -25,13 +25,20 @@
             <h1 class="search__title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="search__subtitle">En plein centre ville ou en pleine nature</p>
             
-            <form>
-                <label class="search__bar">
-                    <p class="search__position"><img src="images/Icones/map-marker-alt-solid.svg" alt="map" class="icon"></p>
-                    <input type="search" name="city" id="city" class="search__city" placeholder="Marseille, France">
-                    <button type="submit" id="submit" class="search__btn">Rechercher</button>
-                </label>
-            </form>
+            <div class="search__bar">
+                <div class="form__icon"><img src="images/Icones/map-marker-alt-solid.svg" alt="#" class="icon"></div>
+                <form class="search__form">
+                    <label for="search">
+                        <input type="search" name="city" id="search" class="search__area" placeholder="Marseille, France">
+                    </label>
+                    <label for="submit" >
+                        <button type="submit" id="submit" class="search__btn">Rechercher</button>
+                    </label>
+                    <label for="submit2" class="form__icon2">
+                        <button type="submit" id="submit2" class="search__btn"></button>
+                    </label>
+                </form>
+            </div>
 
             <div class="search__filter">
                 <p class="search__filter__title">Filtres</p>
