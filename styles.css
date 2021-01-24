@@ -433,6 +433,7 @@ p,
     bottom: 2em;
     left : 6%;
     position: absolute;
+    font-weight: 600;
 }
 @media (max-width: 1024px) {
     .heberge__result {
@@ -599,87 +600,113 @@ p,
 }
 /* ACTIVITY SECTION */
 
-.activites {
-    height: 61.5em;
-    margin: 2em 3%;
-    background-color: #0065fc;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
+.act {
+    position: relative;
+}
+.act__title {
+    position: absolute;
+    top: 1em;
+    left: 1em;
 }
 .act__container {
-    margin-top: 20px;
-    max-height: 80%;
-    max-width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    flex: 1 1 100%;
+    padding-top: 5em;
+    padding-bottom: 2.5em;
+    margin: auto;
 }
 .act__card {
-    border-radius: 20px;
+    height: 19em;
+    width: 33.5em;
+    border-radius: 2em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    object-fit: cover;
+    position: relative;
+    margin: 2em auto;
 }
-/* .act__card__1 {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 100%;
-} */
-.act__card__1 img {
+.act__card__pic {
+    height: 13.4em;
+    width: 33.5em;
     object-fit: cover;
-    max-height: 390px;
-    max-width: 100%;
-    display: block;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
 }
-/* .act__card__2 {
-    flex-grow: ;
-    flex-shrink: ;
-    flex-basis: ;
-} */
-.act__card__2 img {
-    object-fit: cover;
-    max-height: 390px;
+.act__card__title {
+    font-size: 1.6em;
+    font-weight: 600;
+    position: absolute;
+    left: 1.5em;
+    bottom: 1em;
 }
-/* .act__card__3 {
-    flex-grow: ;
-    flex-shrink: ;
-    flex-basis: ;
-} */
-.act__card__3 img {
-    object-fit: cover;
-    max-height: 390px;
-}
-/* .act__card__4 {
-    flex-grow: ;
-    flex-shrink: ;
-    flex-basis: ;
-} */
-.act__card__4 img {
-    object-fit: cover;
-    max-height: 390px;
-}
-/* .act__card__5 {
-    flex-grow: ;
-    flex-shrink: ;
-    flex-basis: ;
-} */
-.act__card__5 img {
-    object-fit: cover;
-    max-height: 390px;
-}
-/* .act__card__6 {
-    flex-grow: ;
-    flex-shrink: ;
-    flex-basis: ;
-} */
-.act__card__6 img {
-    object-fit: cover;
-    max-height: 390px;
-}
-@media (max-width: 768px) {
-    .activites {
-        margin-left: 0;
+@media (min-width: 769px) {
+    /* .act {
+        margin: 0 5%;
+    } */
+    .act__title {
+        left: 6%;
     }
+    .act__container {
+        margin: 0 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .act__card__1 {
+        order: 1;
+        height: 44.5em;
+    }
+    .act__card__pic1 {
+        height: 39em;
+    }
+    .act__sous__container1 {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        margin: 0 auto;
+    }
+    .act__card__2 {
+        order: 2;
+        height: 23.6em;
+    }
+    .act__card__pic2 {
+        height: 18em;
+    }
+    .act__card__3 {
+        order: 3;
+        height: 16.4em;
+    }
+    .act__card__pic3 {
+        height: 11em;
+    }
+    .act__card__4 {
+        order: 4;
+        height: 44.5em;
+    }
+    .act__card__pic4 {
+        height: 39em;
+    }
+    .act__sous__container2 {
+        order: 4;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        margin: 0 auto;
+    }
+    .act__card__5 {
+        order: 5;
+        height: 19.5em;
+    }
+    .act__card__pic5 {
+        height: 13.9em;
+    }
+    .act__card__6 {
+        order: 6;
+        height: 20.9em;
+    }
+    .act__card__pic6 {
+        height: 15.3em;
+    }
+}
+@media (min-width: 992px) {
     
 }
 
