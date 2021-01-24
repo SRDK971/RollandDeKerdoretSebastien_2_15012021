@@ -2,10 +2,9 @@
 
 /*************** GENERAL ****************/
 
-*, *::before, *::after {
+/* *, *::before, *::after {
     box-sizing: border-box;
-    font-size: 10px;
-}
+} */
 * {
     padding: 0;
     margin: 0;
@@ -30,11 +29,6 @@ p,
 
 .--black {
     color: #111;
-}
-
-.icon {
-    height: 1.2em;
-    width: 1.2em;
 }
 
 .stars {
@@ -185,7 +179,8 @@ p,
     border-bottom-left-radius: 15px;
 }
 .icon {
-    height: 15px;
+    height: 1.5em;
+    width: 1.2em;
 }
 
 .search__form {
@@ -214,6 +209,7 @@ p,
     color: #111;
     background-color: #fff;
     font-weight: 600;
+    font-size: 1.5em;
     opacity: 1;
 
 }
@@ -235,16 +231,13 @@ p,
 .form__icon2 {
     height: 50px;
     width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #0065fc;
-    border-radius: 1em;
+    border-radius: 1.5em;
     cursor: pointer;
     margin: 0 0 0 -10px;
-    background-image: url(images/Icones/search-solid.svg);
+    background-image: url(images/Icones/search.svg);
+    background-size: 1.8em;
     background-repeat: no-repeat;
-    background-size: 18px;
     background-position: center;
 }
 
@@ -304,6 +297,15 @@ p,
     font-weight: 600;
     padding-left: 10px;
 }
+@media (max-width: 768px) {
+    .search__container{
+        height: 55em;
+    }
+    .search__filter__title {
+        margin-right: 100%;
+        padding: 1.5em 0 1em 0;
+    }
+}
 
 /* SEARCH SECTION: AVAILABILITY NUMBER */
 
@@ -313,16 +315,20 @@ p,
 }
 .search__info__text {
     padding-left: 10px;
-
+    font-weight: 600;
 }
 .search__icon__info {
-    width: 1.5em;
-    height: 1.5em;
+    width: 0.7em;
+    height: 0.7em;
     border-style: solid;
     border-color: #f2f2f2;
     border-radius: 50%;
     border-width: 1px;
     padding: 6.5px;
+    background-image: url(images/Icones/info-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.3em;
 }
 
 
