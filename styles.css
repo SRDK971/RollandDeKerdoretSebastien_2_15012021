@@ -635,7 +635,7 @@ p,
     left: 1.5em;
     bottom: 1em;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     /* .act {
         margin: 0 5%;
     } */
@@ -707,7 +707,23 @@ p,
     }
 }
 @media (min-width: 992px) {
-    
+    .act {
+        width: 100%;
+        margin-top: 3em;
+    }
+    .act__container {
+        margin: 0 2em;
+        justify-content: space-between;
+    }
+    .act__title {
+        left: 2.2em;
+    }
+    .act__card {
+        width: 30em;
+    }
+    .act__card__pic {
+        width: 30em;
+    }
 }
 
 /* FOOTER */
