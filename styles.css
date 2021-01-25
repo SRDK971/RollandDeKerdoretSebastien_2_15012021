@@ -32,7 +32,7 @@ p,
   height: 10px;
   width: auto;
 }
-article a,
+.heberge a,
 .act a {
   text-decoration: none;
   color: #111;
@@ -358,12 +358,6 @@ article a,
   display: flex;
   justify-content: space-between;
 }
-/* @media (max-width: 1294px) {
-    .heberge {
-        height: 70em;
-        
-    }
-} */
 @media (max-width: 1024px) {
   .heberge {
     display: flex;
@@ -371,11 +365,7 @@ article a,
     margin: 0;
   }
 }
-/* @media (max-width: 768px) {
-    .heberge {
-        margin: 3em 0 0 0;
-    }
-} */
+
 /* RESULT SECTION: HEBERGEMENTS */
 
 .heberge__result {
@@ -400,7 +390,6 @@ article a,
   justify-content: space-evenly;
   align-content: space-around;
   padding: 6em 0;
-  text-decoration: none;
 }
 .heberge__card {
   height: 20em;
@@ -409,7 +398,6 @@ article a,
   border-radius: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   margin: 1em 0;
-  text-decoration: none;
 }
 .heberge__card__pic {
   height: 11.4em;
@@ -420,12 +408,10 @@ article a,
   border-top-right-radius: 20px;
 }
 .heberge__card__dpt {
-  font-size: 1.4em;
   padding: 5px 5px 5px 15px;
 }
 .heberge__card__price {
-  padding: 2px 0 5px 15px;
-  text-decoration: none;
+  padding: 0 0 5px 15px;
 }
 .heberge__card__rev {
   padding: 2px 0 0 15px;
@@ -504,8 +490,8 @@ article a,
   height: 1.5em;
   width: 1.5em;
   position: absolute;
-  top: 2.5em;
-  right: 3.3em;
+  top: 3.1em;
+  right: 3.7em;
 }
 .pop__container {
   margin: auto;
@@ -519,7 +505,7 @@ article a,
   height: 14.5em;
   max-width: 34.5em;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   margin: 10px 20px 20px 20px;
@@ -529,24 +515,24 @@ article a,
   height: 13.5em;
   width: 40%;
   object-fit: cover;
-  padding: 5px;
+  margin: 5px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.pop__card__text {
-  height: 105px;
-  width: 55%;
-  padding: 1.5em 1.3em 1em 1.3em;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-around; */
+.pop__card__title {
+  position: absolute;
+  top: 1.3em;
+  left: 10.3em;
 }
 .pop__card__price {
-  margin: 0.5em 0 2.4em 0;
+  position: absolute;
+  top: 4.3em;
+  left: 11.8em;
 }
 .pop__card__rev {
   position: absolute;
-  bottom: 1em;
+  bottom: 1.2em;
+  left: 16.5em;
 }
 @media (max-width: 1246px) {
   .pop__container {
