@@ -519,9 +519,9 @@ p,
 }
 .pop__card {
   height: 14.5em;
-  max-width: 34.5em;
+  width: 34.5em;
   background-color: #fff;
-  border-radius: 25px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   margin: 10px 20px 20px 20px;
@@ -529,9 +529,9 @@ p,
 }
 .pop__pic {
   height: 13.5em;
-  width: 40%;
+  width: 13.8em;
   object-fit: cover;
-  margin: 5px;
+  padding: 5px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -557,9 +557,25 @@ p,
   }
   .pop__card {
     margin: 2em 1em;
+    width: 30em;
   }
   .pop__title {
     left: 1em;
+  }
+  .pop__card__title {
+    position: absolute;
+    top: 1.3em;
+    left: 9.8em;
+  }
+  .pop__card__price {
+    position: absolute;
+    top: 4.3em;
+    left: 11.2em;
+  }
+  .pop__card__rev {
+    position: absolute;
+    bottom: 1.2em;
+    left: 15.5em;
   }
   .pop__icon {
     top: 2.5em;
@@ -577,9 +593,6 @@ p,
     padding-top: 10em;
     margin: auto;
   }
-  .pop__card {
-    width: 32em;
-  }
 }
 
 @media (max-width: 760px) {
@@ -593,12 +606,11 @@ p,
   .pop__card {
     height: 14em;
     width: 33.5em;
-    justify-content: space-around;
-    align-content: space-around;
     margin: 1em;
   }
   .pop__pic {
     height: 13em;
+    width: 12.8em;
   }
   .pop__title {
     left: 7%;
