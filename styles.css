@@ -2,7 +2,7 @@
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   max-width: 1440px;
   font-family: "Raleway", sans-serif;
   font-size: 10px;
@@ -112,7 +112,7 @@ p,
 
   .menu__nav {
     order: 0;
-    margin-left: auto;
+    margin: 0;
     max-width: 35em;
   }
 
@@ -278,6 +278,7 @@ p,
 
 .search__filter {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   padding: 20px 10px;
@@ -286,6 +287,10 @@ p,
 .search__filter__title {
   font-weight: 600;
   padding-right: 10px;
+  margin: 0;
+}
+.search__filter__list {
+  margin: 0;
 }
 .search__filter__option {
   display: inline-flex;
@@ -316,6 +321,9 @@ p,
   margin: 0 10px 0 -10px;
 }
 @media (max-width: 768px) {
+  .search__filter__container {
+    margin: 0;
+  }
   .search__filter__title {
     margin-right: 100%;
     padding: 1.5em 0 1em 0;
@@ -331,10 +339,12 @@ p,
 .search__info {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 .search__info__text {
   padding-left: 10px;
   font-weight: 600;
+  margin: 0;
 }
 .search__icon__info {
   width: 0.7em;
@@ -348,6 +358,7 @@ p,
   background-repeat: no-repeat;
   background-position: center;
   background-size: 0.3em;
+  margin: 0;
 }
 
 /* RESULT SECTION : HEBERGEMENT ET POPULAIRE */
@@ -369,7 +380,7 @@ p,
 /* RESULT SECTION: HEBERGEMENTS */
 
 .heberge__result {
-  width: 65%;
+  width: 64%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -486,7 +497,7 @@ p,
 /* RESULT SECTION: POPULAIRES */
 
 .pop {
-  width: 33%;
+  width: 31%;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -521,7 +532,7 @@ p,
   height: 14.5em;
   width: 34.5em;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   margin: 10px 20px 20px 20px;
@@ -531,9 +542,11 @@ p,
   height: 13.5em;
   width: 13.8em;
   object-fit: cover;
-  padding: 5px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
 }
 .pop__card__title {
   position: absolute;
