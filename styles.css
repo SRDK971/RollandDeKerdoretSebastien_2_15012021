@@ -312,7 +312,6 @@ p,
   cursor: pointer;
 }
 .search__filter__option:hover {
-  border-color: #0065fc;
   background-color: #0065fc;
   color: #fff;
 }
