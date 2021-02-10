@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Reservia</title>
-</head>
-<body>
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Reservia</title>
+    </head>
+    <body>
         <header class="menu">
-                <div class="menu__container__logo"><img src="images/logo/Reservia@3x.png" alt="Logo Reservia" id="logo"></div>
-                <nav class="menu__nav">
-                    <ul class="menu__list">
-                        <li class="menu__item menu__item--blue"><a href="#hebergements" class="menu__lien blue">Hébergements</a></li>
-                        <li class="menu__item menu__item--gray"><a href="#activites" class="menu__lien black">Activités</a></li>
-                    </ul>
-                </nav>
-                <div class="menu__container__sub"><a href="#subscription" class="menu__sub">S'inscrire</a></div>
+            <div class="menu__container__logo">
+                <img
+                    src="images/logo/Reservia@3x.png"
+                    alt="Logo Reservia"
+                    id="logo"
+                />
+            </div>
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--blue">
+                        <a href="#hebergements" class="menu__lien blue"
+                            >Hébergements</a
+                        >
+                    </li>
+                    <li class="menu__item menu__item--gray">
+                        <a href="#activites" class="menu__lien black"
+                            >Activités</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu__container__sub">
+                <a href="#subscription" class="menu__sub">S'inscrire</a>
+            </div>
         </header>
 
         <section class="search">
-            <h1 class="search__title">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p class="search__subtitle">En plein centre ville ou en pleine nature</p>    
+            <h1 class="search__title">
+                Trouvez votre hébergement pour des vacances de rêve
+            </h1>
+            <p class="search__subtitle">
+                En plein centre ville ou en pleine nature
+            </p>
             <div class="search__bar">
                 <div class="form__icon">
-                    <img src="images/Icones/map-marker-alt-solid.svg" alt="#" class="icon">
+                    <img
+                        src="images/Icones/map-marker-alt-solid.svg"
+                        alt="#"
+                        class="icon"
+                    />
                 </div>
                 <form class="search__form">
                     <label for="search">
-                        <input type="search" name="city" id="search" class="search__area" placeholder="Marseille, France">
+                        <input
+                            type="search"
+                            name="city"
+                            id="search"
+                            class="search__area"
+                            placeholder="Marseille, France"
+                        />
                     </label>
-                    <label for="submit" >
-                        <button type="submit" id="submit" class="search__btn">Rechercher</button>
+                    <label for="submit">
+                        <button type="submit" id="submit" class="search__btn">
+                            Rechercher
+                        </button>
                     </label>
                     <label for="submit2" class="form__icon2">
-                        <button type="submit" id="submit2" class="search__btn"></button>
+                        <button
+                            type="submit"
+                            id="submit2"
+                            class="search__btn"
+                        ></button>
                     </label>
                 </form>
             </div>
@@ -44,37 +82,92 @@
                 <div class="search__filter">
                     <p class="search__filter__title">Filtres</p>
                     <ul class="search__filter__list">
-                        <li class="search__filter__option"><img src="images/Icones/money-bill-wave-solid.svg" alt="" class="search__filter__icon">Économique</li>
-                        <li class="search__filter__option"><img src="images/Icones/child-solid.svg" alt="" class="search__filter__icon">Familial</li>
-                        <li class="search__filter__option"><img src="images/Icones/heart-solid.svg" alt="" class="search__filter__icon">Romantique</li>
-                        <li class="search__filter__option"><img src="images/Icones/dog-solid.svg" alt="" class="search__filter__icon">Animaux autorisés</li>
+                        <li class="search__filter__option">
+                            <img
+                                src="images/Icones/money-bill-wave-solid.svg"
+                                alt=""
+                                class="search__filter__icon"
+                            />Économique
+                        </li>
+                        <li class="search__filter__option">
+                            <img
+                                src="images/Icones/child-solid.svg"
+                                alt=""
+                                class="search__filter__icon"
+                            />Familial
+                        </li>
+                        <li class="search__filter__option">
+                            <img
+                                src="images/Icones/heart-solid.svg"
+                                alt=""
+                                class="search__filter__icon"
+                            />Romantique
+                        </li>
+                        <li class="search__filter__option">
+                            <img
+                                src="images/Icones/dog-solid.svg"
+                                alt=""
+                                class="search__filter__icon"
+                            />Animaux autorisés
+                        </li>
                     </ul>
                 </div>
                 <div class="search__info">
                     <p class="search__icon__info"></p>
-                    <p class="search__info__text">Plus de 500 logements sont disponibles dans cette ville</p>               
+                    <p class="search__info__text">
+                        Plus de 500 logements sont disponibles dans cette ville
+                    </p>
                 </div>
             </div>
         </section>
 
         <div class="heberge" id="hebergements">
-            <div class="heberge__result"> <!-- only used for styling purposes -->
+            <div class="heberge__result">
+                <!-- only used for styling purposes -->
                 <section class="heberge__container">
                     <h2 class="heberge__title">Hébergements à Marseille</h2>
                     <article class="heberge__card">
                         <a href="#">
                             <div class="heberge__card__pic">
-                                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" class="card__pic">
+                                <img
+                                    src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                    alt="Auberge la Cannebière"
+                                    class="card__pic"
+                                />
                             </div>
                             <div class="heberge__card__content">
-                                <h3 class="heberge__card__dpt">Auberge la Cannebière</h3>
-                                <p class="heberge__card__price">Nuit à partir de 25€</p>
+                                <h3 class="heberge__card__dpt">
+                                    Auberge la Cannebière
+                                </h3>
+                                <p class="heberge__card__price">
+                                    Nuit à partir de 25€
+                                </p>
                                 <div class="heberge__card__rev">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solid-gris.png" alt="Review" class="stars">
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solid-gris.png"
+                                        alt="Review"
+                                        class="stars"
+                                    />
                                 </div>
                             </div>
                         </a>
@@ -82,17 +175,45 @@
                     <article class="heberge__card">
                         <a href="#">
                             <div class="heberge__card__pic">
-                                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" class="card__pic">
+                                <img
+                                    src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                    alt="Hôtel du port"
+                                    class="card__pic"
+                                />
                             </div>
                             <div class="heberge__card__content">
-                                <h3 class="heberge__card__dpt">Hôtel du port</h3>
-                                <p class="heberge__card__price">Nuit à partir de 52€</p>
+                                <h3 class="heberge__card__dpt">
+                                    Hôtel du port
+                                </h3>
+                                <p class="heberge__card__price">
+                                    Nuit à partir de 52€
+                                </p>
                                 <div class="heberge__card__rev">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
                                 </div>
                             </div>
                         </a>
@@ -100,17 +221,45 @@
                     <article class="heberge__card">
                         <a href="#">
                             <div class="heberge__card__pic">
-                                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" class="card__pic">
+                                <img
+                                    src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                    alt="Hôtel Les mouettes"
+                                    class="card__pic"
+                                />
                             </div>
                             <div class="heberge__card__content">
-                                <h3 class="heberge__card__dpt">Hôtel Les mouettes</h3>
-                                <p class="heberge__card__price">Nuit à partir de 76€</p>
+                                <h3 class="heberge__card__dpt">
+                                    Hôtel Les mouettes
+                                </h3>
+                                <p class="heberge__card__price">
+                                    Nuit à partir de 76€
+                                </p>
                                 <div class="heberge__card__rev">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solid-gris.png" alt="Review" class="stars">
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solid-gris.png"
+                                        alt="Review"
+                                        class="stars"
+                                    />
                                 </div>
                             </div>
                         </a>
@@ -118,17 +267,45 @@
                     <article class="heberge__card">
                         <a href="#">
                             <div class="heberge__card__pic">
-                                <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" class="card__pic">
+                                <img
+                                    src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                    alt="Hôtel de la mer"
+                                    class="card__pic"
+                                />
                             </div>
                             <div class="heberge__card__content">
-                                <h3 class="heberge__card__dpt">Hôtel de la mer</h3>
-                                <p class="heberge__card__price">Nuit à partir de 46€</p>
+                                <h3 class="heberge__card__dpt">
+                                    Hôtel de la mer
+                                </h3>
+                                <p class="heberge__card__price">
+                                    Nuit à partir de 46€
+                                </p>
                                 <div class="heberge__card__rev">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solid-gris.png" alt="Review" class="stars">
-                                    <img src="images/Icones/star-solid-gris.png" alt="Review" class="stars">
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solid-gris.png"
+                                        alt="Review"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solid-gris.png"
+                                        alt="Review"
+                                        class="stars"
+                                    />
                                 </div>
                             </div>
                         </a>
@@ -136,44 +313,101 @@
                     <article class="heberge__card">
                         <a href="#">
                             <div class="heberge__card__pic">
-                                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" class="card__pic">
+                                <img
+                                    src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                    alt="Auberge Le Panier"
+                                    class="card__pic"
+                                />
                             </div>
                             <div class="heberge__card__content">
-                                <h3 class="heberge__card__dpt">Auberge Le Panier</h3>
-                                <p class="heberge__card__price">Nuit à partir de 23€</p>
+                                <h3 class="heberge__card__dpt">
+                                    Auberge Le Panier
+                                </h3>
+                                <p class="heberge__card__price">
+                                    Nuit à partir de 23€
+                                </p>
                                 <div class="heberge__card__rev">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solid-gris.png" alt="Review" class="stars">
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solid-gris.png"
+                                        alt="Review"
+                                        class="stars"
+                                    />
                                 </div>
-                            </div>                                   
+                            </div>
                         </a>
                     </article>
                     <article class="heberge__card">
                         <a href="#">
                             <div class="heberge__card__pic">
-                                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" class="card__pic">
+                                <img
+                                    src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                    alt="Hôtel chez Amina"
+                                    class="card__pic"
+                                />
                             </div>
                             <div class="heberge__card__content">
-                                <h3 class="heberge__card__dpt">Hôtel chez Amina</h3>
-                                <p class="heberge__card__price">Nuit à partir de 96€</p>
+                                <h3 class="heberge__card__dpt">
+                                    Hôtel chez Amina
+                                </h3>
+                                <p class="heberge__card__price">
+                                    Nuit à partir de 96€
+                                </p>
                                 <div class="heberge__card__rev">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
                                 </div>
                             </div>
                         </a>
                     </article>
                     <p class="heberge__plus">Afficher plus</p>
-                </section>     
+                </section>
             </div>
 
-            <div class="pop"> <!-- only used for styling purposes -->
+            <div class="pop">
+                <!-- only used for styling purposes -->
                 <aside class="pop__container">
                     <header>
                         <h2 class="pop__title">Les plus populaires</h2>
@@ -182,17 +416,45 @@
                     <article class="pop__card">
                         <a href="#" class="pop__card__wrapper">
                             <div class="pop__card__pic">
-                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="pop__pic">
+                                <img
+                                    src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                    alt="Hôtel Le soleil du matin"
+                                    class="pop__pic"
+                                />
                             </div>
                             <div class="pop__card__content">
-                                <h3 class="pop__card__title">Hôtel Le soleil du matin</h3>
-                                <p class="pop__card__price">Nuit à partir de 128€</p>
+                                <h3 class="pop__card__title">
+                                    Hôtel Le soleil du matin
+                                </h3>
+                                <p class="pop__card__price">
+                                    Nuit à partir de 128€
+                                </p>
                                 <div class="pop__card__rev">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
                                 </div>
                             </div>
                         </a>
@@ -200,17 +462,45 @@
                     <article class="pop__card">
                         <a href="#" class="pop__card__wrapper">
                             <div class="pop__card__pic">
-                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes" class="pop__pic">
+                                <img
+                                    src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                    alt="Au coeur de l'eau Chambres d'hôtes"
+                                    class="pop__pic"
+                                />
                             </div>
                             <div class="pop__card__content">
-                                <h3 class="pop__card__title">Au coeur de l'eau Chambres d'hôtes</h3>
-                                <p class="pop__card__price">Nuit à partir de 71€</p>
+                                <h3 class="pop__card__title">
+                                    Au coeur de l'eau Chambres d'hôtes
+                                </h3>
+                                <p class="pop__card__price">
+                                    Nuit à partir de 71€
+                                </p>
                                 <div class="pop__card__rev">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solid-gris.png" alt="Review" class="stars">
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solid-gris.png"
+                                        alt="Review"
+                                        class="stars"
+                                    />
                                 </div>
                             </div>
                         </a>
@@ -218,19 +508,47 @@
                     <article class="pop__card">
                         <a href="#" class="pop__card__wrapper">
                             <div class="pop__card__pic">
-                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" class="pop__pic">
+                                <img
+                                    src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                    alt="Hôtel Tout bleu et Blanc"
+                                    class="pop__pic"
+                                />
                             </div>
                             <div class="pop__card__content">
-                                <h3 class="pop__card__title">Hôtel Tout bleu et Blanc</h3>
-                                <p class="pop__card__price">Nuit à partir de 68€</p>
+                                <h3 class="pop__card__title">
+                                    Hôtel Tout bleu et Blanc
+                                </h3>
+                                <p class="pop__card__price">
+                                    Nuit à partir de 68€
+                                </p>
                                 <div class="pop__card__rev">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solidcopy.png" alt="Review__checked" class="stars">
-                                    <img src="images/Icones/star-solid-gris.png" alt="Review" class="stars">
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solidcopy.png"
+                                        alt="Review__checked"
+                                        class="stars"
+                                    />
+                                    <img
+                                        src="images/Icones/star-solid-gris.png"
+                                        alt="Review"
+                                        class="stars"
+                                    />
                                 </div>
-                            </div>                                
+                            </div>
                         </a>
                     </article>
                 </aside>
@@ -243,7 +561,11 @@
                 <div class="act__card act__card__1">
                     <a href="#">
                         <div class="act__card__picwrapper">
-                            <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="act__card__pic act__card__pic1">
+                            <img
+                                src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                alt=""
+                                class="act__card__pic act__card__pic1"
+                            />
                         </div>
                         <div class="act__card__content">
                             <p class="act__card__title">Vieux Port</p>
@@ -254,7 +576,11 @@
                     <div class="act__card act__card__2">
                         <a href="#">
                             <div class="act__card__picwrapper">
-                                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" class="act__card__pic act__card__pic2">
+                                <img
+                                    src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                    alt=""
+                                    class="act__card__pic act__card__pic2"
+                                />
                             </div>
                             <div class="act__card__content">
                                 <p class="act__card__title">Fort de Pomègues</p>
@@ -264,7 +590,11 @@
                     <div class="act__card act__card__3">
                         <a href="#">
                             <div class="act__card__picwrapper">
-                                <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" class="act__card__pic act__card__pic3">
+                                <img
+                                    src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                    alt=""
+                                    class="act__card__pic act__card__pic3"
+                                />
                             </div>
                             <div class="act__card__content">
                                 <p class="act__card__title">Îles de Frioul</p>
@@ -275,10 +605,16 @@
                 <div class="act__card act__card__4">
                     <a href="#">
                         <div class="act__card__picwrapper">
-                            <img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class="act__card__pic act__card__pic4">
+                            <img
+                                src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                alt=""
+                                class="act__card__pic act__card__pic4"
+                            />
                         </div>
                         <div class="act__card__content">
-                            <p class="act__card__title">Parc National des Calanques</p>
+                            <p class="act__card__title">
+                                Parc National des Calanques
+                            </p>
                         </div>
                     </a>
                 </div>
@@ -286,17 +622,27 @@
                     <div class="act__card act__card__5">
                         <a href="#">
                             <div class="act__card__picwrapper">
-                                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class="act__card__pic act__card__pic5">
+                                <img
+                                    src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt=""
+                                    class="act__card__pic act__card__pic5"
+                                />
                             </div>
                             <div class="act__card__content">
-                                <p class="act__card__title">Notre-Dame-de-la-Garde</p>
+                                <p class="act__card__title">
+                                    Notre-Dame-de-la-Garde
+                                </p>
                             </div>
                         </a>
                     </div>
                     <div class="act__card act__card__6">
                         <a href="#">
                             <div class="act__card__picwrapper">
-                                <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" class="act__card__pic act__card__pic6">
+                                <img
+                                    src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                    alt=""
+                                    class="act__card__pic act__card__pic6"
+                                />
                             </div>
                             <div class="act__card__content">
                                 <p class="act__card__title">Parc Longchamp</p>
@@ -306,28 +652,26 @@
                 </div>
             </section>
         </div>
-    
-    
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__bloc">
-                <p class="footer__title">A propos</p>
-                <p class="footer__link">Fonctionnement du site</p>
-                <p class="footer__link">Conditions générales de vente</p>
-                <p class="footer__link">Données et confidentialité</p>
-            </div>
-            <div class="footer__bloc">
-                <p class="footer__title">Nos hébergements</p>
-                <p class="footer__link">Charte qualité</p>
-                <p class="footer__link">Soumettre votre hôtel</p>
-            </div>
-            <div class="footer__bloc">
-                <p class="footer__title">Assistance</p>
-                <p class="footer__link">Centre d'aide</p>
-                <p class="footer__link">Nous contacter</p>
-            </div>
-        </div>
-    </footer>
 
-</body>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__bloc">
+                    <p class="footer__title">A propos</p>
+                    <p class="footer__link">Fonctionnement du site</p>
+                    <p class="footer__link">Conditions générales de vente</p>
+                    <p class="footer__link">Données et confidentialité</p>
+                </div>
+                <div class="footer__bloc">
+                    <p class="footer__title">Nos hébergements</p>
+                    <p class="footer__link">Charte qualité</p>
+                    <p class="footer__link">Soumettre votre hôtel</p>
+                </div>
+                <div class="footer__bloc">
+                    <p class="footer__title">Assistance</p>
+                    <p class="footer__link">Centre d'aide</p>
+                    <p class="footer__link">Nous contacter</p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
