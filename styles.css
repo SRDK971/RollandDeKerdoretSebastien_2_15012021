@@ -466,6 +466,9 @@ p,
     width: 100%;
     background-color: #fff;
   }
+  .heberge__container {
+    margin-top: 4em;
+  }
 }
 @media (max-width: 900px) {
   .heberge__card {
@@ -630,17 +633,17 @@ aside header {
   position: relative;
   margin: 2em auto;
 }
-.act__card__pic {
-  width: 100%;
-  margin-bottom: 5.4em;
+.act__card__picwrapper {
+  height: 13.4em;
 }
 .act__card__pic {
-  height: 13.4em;
+  height: 100%;
   width: 100%;
   box-sizing: border-box;
   object-fit: cover;
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
+  margin-bottom: 5.4em;
 }
 .act__card__content {
   width: 100%;
@@ -749,11 +752,11 @@ aside header {
   }
   .act__card__1,
   .act__card__4 {
-    width: 24%;
+    width: 23%;
   }
   .act__sous__container1,
   .act__sous__container2 {
-    width: 24%;
+    width: 23%;
   }
 }
 /* FOOTER */
